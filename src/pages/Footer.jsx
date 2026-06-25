@@ -42,7 +42,7 @@ export default function Footer() {
             <h3>Connect</h3>
 
             <div className="social-icons">
-              <a href="https://github.com/vishalahir1010"><FaGithub /></a>
+              <a href="" target="_blank"><FaGithub /></a>
               <a href=""><FaLinkedin /></a>
               <a href="#"><FaInstagram /></a>
             </div>

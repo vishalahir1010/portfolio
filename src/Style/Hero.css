@@ -4,59 +4,79 @@ min-height:100vh;
 
 display:grid;
 
-grid-template-columns:
-1fr 1fr;
+grid-template-columns:1fr 1fr;
 
 align-items:center;
 
-gap:80px;
+padding:140px 8% 80px;
+
+gap:70px;
 
 }
 
-.left h1{
+/* LEFT */
 
-font-size:85px;
+.heroLeft{
 
-line-height:1;
+max-width:650px;
+
+}
+
+.topText{
+
+color:#60a5fa;
+
+font-size:15px;
+
+letter-spacing:4px;
 
 margin-bottom:25px;
 
 }
 
-.left span{
+.hero h1{
 
-background:
-linear-gradient(
-90deg,
-#3b82f6,
-#9333ea
-);
+font-size:78px;
 
--webkit-background-clip:text;
+line-height:1;
 
-color:transparent;
+font-weight:800;
+
+margin-bottom:30px;
+
+color:white;
 
 }
 
-.left p{
+.heroDesc{
 
 font-size:20px;
 
-color:#94a3b8;
-
 line-height:2;
 
-max-width:550px;
+color:#94a3b8;
+
+max-width:600px;
+
+margin-bottom:50px;
 
 }
 
-.left button{
+/* BUTTON */
 
-margin-top:40px;
+.buttons{
 
-padding:20px 40px;
+display:flex;
 
-font-size:18px;
+gap:20px;
+
+}
+
+.primary{
+
+padding:18px 40px;
+
+border:none;
 
 border-radius:18px;
 
@@ -64,36 +84,84 @@ background:
 linear-gradient(
 135deg,
 #2563eb,
-#9333ea
+#7c3aed
 );
 
 color:white;
 
-box-shadow:
-0 20px 60px
-#2563eb55;
+}
+
+.secondary{
+
+padding:18px 40px;
+
+background:transparent;
+
+border:1px solid rgba(255,255,255,.15);
+
+color:white;
+
+border-radius:18px;
 
 }
 
-.right{
+/* STATS */
+
+.heroInfo{
 
 display:flex;
 
-justify-content:center;
+gap:50px;
+
+margin-top:60px;
 
 }
 
-.right img{
+.heroInfo h2{
 
-width:550px;
+font-size:36px;
 
-border-radius:40px;
+color:#60a5fa;
+
+}
+
+.heroInfo p{
+
+color:#94a3b8;
+
+}
+
+/* IMAGE */
+
+.heroRight{
+
+display:flex;
+
+justify-content:flex-end;
+
+}
+
+.heroRight img{
+
+width:100%;
+
+max-width:560px;
+
+height:620px;
+
+object-fit:cover;
+
+border-radius:36px;
+
+/* same premium glow */
 
 box-shadow:
-0 50px 120px
-#3b82f655;
+0 50px 140px
+rgba(59,130,246,.20);
 
 }
+
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -101,13 +169,37 @@ box-shadow:
 
 grid-template-columns:1fr;
 
+padding-top:130px;
+
 text-align:center;
 
 }
 
-.left h1{
+.hero h1{
 
-font-size:55px;
+font-size:54px;
+
+}
+
+.heroRight img{
+
+max-width:100%;
+
+height:420px;
+
+}
+
+.buttons{
+
+justify-content:center;
+
+}
+
+.heroInfo{
+
+justify-content:center;
+
+flex-wrap:wrap;
 
 }
 

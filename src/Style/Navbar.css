@@ -148,6 +148,61 @@ transform:
 translateY(-4px);
 
 }
+.navRight{
+
+display:flex;
+
+align-items:center;
+
+gap:18px;
+
+}
+
+.themeBtn{
+
+width:54px;
+
+height:54px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+cursor:pointer;
+
+background:
+rgba(255,255,255,.08);
+
+border:
+1px solid
+rgba(255,255,255,.08);
+
+color:white;
+
+font-size:20px;
+
+transition:.4s;
+
+}
+
+.themeBtn:hover{
+
+transform:
+rotate(180deg);
+
+}
+
+/* active link */
+
+.navbar .active{
+
+color:#60a5fa;
+
+}
 
 @media(max-width:768px){
 
@@ -170,3 +225,4 @@ font-size:30px;
 }
 
 }
+

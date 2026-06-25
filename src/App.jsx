@@ -1,10 +1,18 @@
-import Navbar from "./Componets/Navbar";
-import Hero from "./Componets/Hero";
-import About from "./Componets/About";
-import Skills from "./Componets/Skills";
-import Projects from "./Componets/Projects";
-import Contact from "./Componets/Contact";
-import Footer from "./Componets/Footer";
+import {
+Routes,
+Route
+}
+from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+
+import About from "./pages/About";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import Hero from "./pages/Hero.jsx";
+import Footer from "./pages/Footer.jsx";
 
 function App(){
 
@@ -14,19 +22,38 @@ return(
 
 <Navbar/>
 
-<Hero/>
+<Routes>
 
-<About/>
+<Route
+path="/"
+element={<Hero/>}
+/>
 
-<Skills/>
+<Route
+path="/about"
+element={<About/>}
+/>
 
-<Projects/>
+<Route
+path="/skills"
+element={<Skills/>}
+/>
 
-<Contact/>
+<Route
+path="/projects"
+element={<Projects/>}
+/>
 
+<Route
+path="/contact"
+element={<Contact/>}
+/>
+
+</Routes>
 <Footer/>
 
 </>
+
 
 )
 
