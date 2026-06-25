@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../style/hero.css";
 
 export default function Hero(){
@@ -39,13 +40,15 @@ and beautiful UI design.
 
 <button className="primary">
 
-View Work
+<NavLink to="Projects">View Work</NavLink>
 
 </button>
 
 <button className="secondary">
 
+<NavLink to="/contact" >
 Contact Me
+</NavLink>
 
 </button>
 

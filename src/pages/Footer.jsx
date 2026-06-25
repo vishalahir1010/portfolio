@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "../style/footer.css";
 import {
   FaGithub,
@@ -29,11 +30,30 @@ export default function Footer() {
             <h3>Quick Links</h3>
 
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><NavLink to="/">Home</NavLink></li>
+             <li>
+<NavLink to="/about">
+About
+</NavLink>
+</li>
+
+<li>
+<NavLink to="/skills">
+Skills
+</NavLink>
+</li>
+
+<li>
+<NavLink to="/projects">
+Projects
+</NavLink>
+</li>
+
+<li>
+<NavLink to="/contact">
+Contact
+</NavLink>
+</li>
             </ul>
           </div>
 
@@ -42,9 +62,9 @@ export default function Footer() {
             <h3>Connect</h3>
 
             <div className="social-icons">
-              <a href="" target="_blank"><FaGithub /></a>
-              <a href=""><FaLinkedin /></a>
-              <a href="#"><FaInstagram /></a>
+              <a href="https://github.com/vishalahir1010" target="_blank"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/kandoriya-vishal-7186803b0?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><FaLinkedin /></a>
+              {/* <a href="#"><FaInstagram /></a> */}
             </div>
           </div>
 

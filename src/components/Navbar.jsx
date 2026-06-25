@@ -83,7 +83,11 @@ Contact
 
 <button>
 
-Hire Me
+
+<NavLink to="/contact" >
+Contact Me
+</NavLink>
+
 
 </button>
 
