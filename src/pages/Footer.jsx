@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../style/footer.css";
+import "../Style/footer.css";
 import {
   FaGithub,
   FaLinkedin,

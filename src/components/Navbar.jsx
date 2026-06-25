@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useState, useEffect } from "react";
 
-import "../style/navbar.css";
+import "../Style/navbar.css";
 
 export default function Navbar(){
 

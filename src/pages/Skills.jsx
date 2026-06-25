@@ -1,4 +1,4 @@
-import "../style/skills.css";
+import "../Style/skills.css";
 
 const skills = [
 

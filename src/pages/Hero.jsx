@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../style/hero.css";
+import "../Style/hero.css";
 
 export default function Hero(){
 

@@ -8,7 +8,7 @@ from "react-router-dom";
 
 import App from "./App";
 
-import "./style/global.css";
+import "./Style/global.css";
 
 ReactDOM.createRoot(
 document.getElementById("root")
