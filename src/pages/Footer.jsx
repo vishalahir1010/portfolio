@@ -3,8 +3,6 @@ import "../style/footer.css";
 import {
   FaGithub,
   FaLinkedin,
-  FaInstagram,
-  FaArrowUp,
 } from "react-icons/fa";
 
 export default function Footer() {
