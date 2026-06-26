@@ -156,21 +156,15 @@ opacity:.9;
 
 @media(max-width:768px){
 
-.projects h2{
+.projectGrid{
 
-font-size:48px;
-
-}
-
-.imgBox{
-
-height:220px;
+grid-template-columns:1fr;
 
 }
 
-.content h3{
+.project{
 
-font-size:28px;
+width:100%;
 
 }
 

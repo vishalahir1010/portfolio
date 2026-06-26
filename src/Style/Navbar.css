@@ -203,26 +203,116 @@ rotate(180deg);
 color:#60a5fa;
 
 }
+.menuBtn{
+
+display:none;
+
+width:54px;
+
+height:54px;
+
+border-radius:50%;
+
+background:
+rgba(255,255,255,.08);
+
+border:
+1px solid
+rgba(255,255,255,.08);
+
+color:white;
+
+font-size:20px;
+
+align-items:center;
+
+justify-content:center;
+
+cursor:pointer;
+
+}
+
 
 @media(max-width:768px){
 
 .navbar{
 
-padding:0 20px;
+width:95%;
 
-}
+padding:0 18px;
 
-.navbar ul{
-
-display:none;
+height:74px;
 
 }
 
 .logo{
 
-font-size:30px;
+font-size:28px;
+
+}
+
+.contactBtn{
+
+display:none;
+
+}
+
+.menuBtn{
+
+display:flex;
+
+}
+
+.navbar ul{
+
+position:absolute;
+
+top:95px;
+
+left:0;
+
+width:100%;
+
+padding:30px;
+
+display:none;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:28px;
+
+background:
+
+rgba(10,15,35,.95);
+
+backdrop-filter:
+
+blur(20px);
+
+border-radius:20px;
+
+}
+
+.navbar ul.showMenu{
+
+display:flex;
+
+}
+
+.navbar a{
+
+font-size:18px;
+
+}
+
+.themeBtn{
+
+width:48px;
+
+height:48px;
 
 }
 
 }
-

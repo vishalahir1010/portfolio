@@ -225,13 +225,7 @@ linear-gradient(
 
 /* MOBILE */
 
-@media(max-width:900px){
-
-.skills h1{
-
-font-size:52px;
-
-}
+@media(max-width:768px){
 
 .skillWrap{
 
@@ -243,7 +237,13 @@ grid-template-columns:1fr;
 
 height:auto;
 
-padding:35px;
+padding:30px;
+
+}
+
+.skillCard h2{
+
+font-size:34px;
 
 }
 

@@ -10,7 +10,8 @@ name:"Hotel Booking",
 image:
 "https://images.unsplash.com/photo-1566073771259-6a8506099945",
 
-tech:"React • CSS • Responsive"
+tech:"React • CSS • Responsive",
+live_link:"#"
 },
 
 {
@@ -19,7 +20,8 @@ name:"Food Delivery",
 image:
 "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
 
-tech:"React • API • UI Design"
+tech:"React • API • UI Design",
+live_link:"#"
 },
 
 {
@@ -28,7 +30,9 @@ name:"Portfolio",
 image:
 "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
 
-tech:"React • Vite • Premium UI"
+tech:"React • Vite • Premium UI",
+live_link:"https://vishalkandoriya.netlify.app"
+
 }
 
 ];
@@ -77,9 +81,11 @@ alt=""
 </p>
 
 <button>
+<a href={item.live_link} target="_blank">
+
 
 View Project
-
+</a>
 </button>
 
 </div>

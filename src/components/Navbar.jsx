@@ -1,6 +1,17 @@
 import { NavLink } from "react-router-dom";
-import { FaMoon, FaSun } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import {
+FaMoon,
+FaSun,
+FaBars,
+FaTimes
+}
+from "react-icons/fa";
+
+import {
+useState,
+useEffect
+}
+from "react";
 
 import "../Style/Navbar.css";
 
@@ -9,6 +20,8 @@ export default function Navbar(){
 const [theme,setTheme]=useState(
 localStorage.getItem("theme") || "dark"
 );
+
+const [menu,setMenu]=useState(false);
 
 useEffect(()=>{
 
@@ -24,13 +37,11 @@ theme
 const toggleTheme=()=>{
 
 setTheme(
-
 theme==="dark"
 ?
 "tokyo"
 :
 "dark"
-
 );
 
 };
@@ -40,39 +51,37 @@ return(
 <nav className="navbar">
 
 <div className="logo">
-
 VISHAL.
-
 </div>
 
-<ul>
+<ul className={menu ? "showMenu" : ""}>
 
 <li>
-<NavLink to="/">
+<NavLink to="/" onClick={()=>setMenu(false)}>
 Home
 </NavLink>
 </li>
 
 <li>
-<NavLink to="/about">
+<NavLink to="/about" onClick={()=>setMenu(false)}>
 About
 </NavLink>
 </li>
 
 <li>
-<NavLink to="/skills">
+<NavLink to="/skills" onClick={()=>setMenu(false)}>
 Skills
 </NavLink>
 </li>
 
 <li>
-<NavLink to="/projects">
+<NavLink to="/projects" onClick={()=>setMenu(false)}>
 Projects
 </NavLink>
 </li>
 
 <li>
-<NavLink to="/contact">
+<NavLink to="/contact" onClick={()=>setMenu(false)}>
 Contact
 </NavLink>
 </li>
@@ -81,13 +90,11 @@ Contact
 
 <div className="navRight">
 
-<button>
+<button className="contactBtn">
 
-
-<NavLink to="/contact" >
+<NavLink to="/contact">
 Contact Me
 </NavLink>
-
 
 </button>
 
@@ -97,17 +104,26 @@ onClick={toggleTheme}
 >
 
 {
-
 theme==="dark"
-
 ?
-
 <FaMoon/>
-
 :
-
 <FaSun/>
+}
 
+</div>
+
+<div
+className="menuBtn"
+onClick={()=>setMenu(!menu)}
+>
+
+{
+menu
+?
+<FaTimes/>
+:
+<FaBars/>
 }
 
 </div>
