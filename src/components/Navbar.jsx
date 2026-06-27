@@ -90,13 +90,13 @@ Contact
 
 <div className="navRight">
 
-<button className="contactBtn">
+{/* <button className="contactBtn">
 
 <NavLink to="/contact">
 Contact Me
 </NavLink>
 
-</button>
+</button> */}
 
 <div
 className="themeBtn"
