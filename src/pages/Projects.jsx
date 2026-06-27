@@ -16,12 +16,12 @@ live_link:"#"
 
 {
 id:"02",
-name:"Food Delivery",
+name:"LUXE SCENT    ",
 image:
-"https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+" https://images.unsplash.com/photo-1594035910387-fea47794261f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGVyZnVtZXxlbnwwfHwwfHx8MA%3D%3D",
 
 tech:"React • API • UI Design",
-live_link:"#"
+live_link:"https://luxesent.netlify.app/"
 },
 
 {

@@ -99,10 +99,7 @@ type="email"
 placeholder="Your Email"
 />
 
-<textarea
-rows="6"
-placeholder="Write Message"
-/>
+<textarea rows="6" placeholder="Write Message"/>
 
 <button>
 
